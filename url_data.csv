@@ -1,0 +1,11 @@
+url,label
+google.com,benign
+youtube.com,benign
+facebook.com,benign
+paypal-update-required.com,bad
+secure-login-app.com,bad
+microsoft-support-team.net,bad
+github.com,benign
+linkedin.com,benign
+your-bank-security-alert.info,bad
+amazon-prime-deals.org,bad
