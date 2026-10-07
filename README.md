@@ -1,52 +1,46 @@
-# 🤖 SentinelAI - Detector de URLs Maliciosas
+# 🤖 SentinelAI
 
-SentinelAI é uma ferramenta de linha de comando construída em Python que utiliza um modelo de Machine Learning (Random Forest) para detectar se uma URL é benigna ou maliciosa (phishing/malware).
+Projeto de estudo em **Python** que aplica conceitos introdutórios de **Machine Learning** à classificação de URLs.
 
-Este projeto foi desenvolvido como uma introdução prática à aplicação de Inteligência Artificial no campo da Cibersegurança.
+O objetivo é praticar preparação de dados, extração de características, treinamento de modelos e inferência com uma aplicação de linha de comando.
 
-## ✨ Funcionalidades
+## Tecnologias
 
--   Análise de URLs em tempo real.
--   Classificação de URLs como 'BENIGN' ou 'BAD'.
--   Exibição da probabilidade da previsão, dando um índice de confiança.
--   Modelo treinado com um dataset de URLs conhecidas, focado em características como comprimento e estrutura da URL.
+- Python
+- pandas
+- scikit-learn
+- joblib
+- Jupyter Notebook
 
-## 🛠️ Tecnologias Utilizadas
+## O que o projeto demonstra
 
--   **Python 3.13**
--   **Scikit-learn:** Para a construção e treinamento do modelo de Machine Learning.
--   **Pandas:** Para a manipulação e engenharia de características dos dados.
--   **Joblib:** Para salvar e carregar o modelo treinado.
--   **Jupyter Notebook:** Para a fase de exploração de dados e prototipagem do modelo.
+- Extração de características simples de URLs
+- Uso de `RandomForestClassifier`
+- Persistência e carregamento de modelo treinado
+- Classificação e apresentação de probabilidades
+- Organização de um fluxo básico de Machine Learning
 
-## 🚀 Como Usar
+## Como executar
 
-1.  **Clone o repositório:**
-    ```bash
-    git clone https://github.com/SEU-USUARIO/sentinel-ai.git
-    cd sentinel-ai
-    ```
+```bash
+git clone https://github.com/Feersec/sentinel-ai.git
+cd sentinel-ai
+python -m venv venv
+```
 
-2.  **Crie e ative um ambiente virtual:**
-    ```bash
-    python3 -m venv venv
-    source venv/bin/activate
-    ```
+Ative o ambiente virtual e instale as dependências:
 
-3.  **Instale as dependências:**
-    ```bash
-    pip install -r requirements.txt
-    ```
+```bash
+pip install -r requirements.txt
+python sentinel.py
+```
 
-4.  **Execute a aplicação:**
-    ```bash
-    python3 sentinel.py
-    ```
+## Observação
 
-## 🧠 Modelo de Machine Learning
+Este é um **projeto educacional e experimental**. Ele não deve ser usado como mecanismo único de decisão para bloquear ou liberar URLs em ambientes de produção.
 
-O coração do SentinelAI é um classificador `RandomForestClassifier` da biblioteca Scikit-learn. O modelo foi treinado para identificar padrões em características extraídas das URLs, como:
--   Comprimento total da URL
--   Contagem de caracteres especiais ('.', '-', '/' )
+---
 
-O notebook de desenvolvimento (`Untitled.ipynb`) contém todo o processo de treinamento, desde a análise exploratória dos dados até a avaliação final do modelo.
+**Autora:** Fernanda Ferreira Bernardo  
+Estudante de Engenharia de Software  
+GitHub: https://github.com/Feersec
